@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 4, 2017 2:10:05 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="domain.PersonDomainModel" table="Person">
+        <id name="PersonID" type="java.util.UUID">
+            <column name="PERSONID" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="street" type="java.lang.String">
+            <column name="STREET" />
+        </property>
+        <property name="postalCode" type="java.lang.Integer">
+            <column name="POSTALCODE" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="birthday" type="java.util.Date">
+            <column name="BIRTHDAY" />
+        </property>
+    </class>
+</hibernate-mapping>
